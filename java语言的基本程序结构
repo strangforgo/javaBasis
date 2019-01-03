@@ -1,0 +1,20 @@
+#数组
+数组申明：int[] a;这条语句只声明了变量a,并没有讲a初始化为一个真正的数组
+数组创建：应该使用new运算符创建数组，int[]  a = new int[10];
+对数组长度的要求：new int[n]会创建一个长度为n的数组，数组长度不要求是常量
+初始化问题：创建一个数字数组时，所有元素都初始化为0，boolean数组的元素会初始化为false，对象数组的元素则初始化为一个特殊值null
+获取数组元素个数：使用array.length,一旦创建了数组，就不能再改变它的大小
+for each循环：可以用来依次处理数组中的每个元素，而不必为指定下标值而分心
+用法：for(int element : a){
+          System.out.println(element);
+      }
+有个更加简单的方式打印数组中的所有值，即利用Arrays类的toString方法。调用Arrays.toString(a).
+返回一个包含数组元素的字符串，这些元素被放置在括号内，并用逗号分隔。
+数组拷贝：在java中允许将一个数组拷贝给另一个数组变量。这时，两个变量将引用同一个数组
+如果希望将一个数组的所有值拷贝到一个新的数组中去，就要使用Arrays类的copyOf方法
+int copiedLuckyNumber = Arrays.copyOf(LuckyNumbers,LuckyNumbers.length);
+数组的排序：Arrays.sort(数组名字)；
+
+二维数组：double[][] balance = new double[NYEARS][NRATES]
+要想快速地打印一个二维数组的数据元素列表，可以调用：
+System.out.println(Arrays.deepToString(a));
