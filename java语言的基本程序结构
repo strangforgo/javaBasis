@@ -18,3 +18,7 @@ int copiedLuckyNumber = Arrays.copyOf(LuckyNumbers,LuckyNumbers.length);
 二维数组：double[][] balance = new double[NYEARS][NRATES]
 要想快速地打印一个二维数组的数据元素列表，可以调用：
 System.out.println(Arrays.deepToString(a));
+
+#数据类型
+在java中，一共有8种基本类型，其中有4种整型/2种浮点类型/1种用于表示Unicode编码的字符单元的字符类型char
+和一种用于表示真值的boolean类型。
